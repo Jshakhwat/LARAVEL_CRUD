@@ -30,6 +30,17 @@ class StudentController extends Controller
         $student = Crud::find($id);
         return view('student.edit_student', compact('student'));
     }
+    public function delete_student($id)
+    {
+        Crud::destroy($id);
+        return back();
+    }
+
+
+
+
+
+
     public function update_student(Request $request, $id)
     {
         

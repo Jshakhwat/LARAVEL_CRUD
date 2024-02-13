@@ -59,7 +59,11 @@
                 <td>{{ $students->passing_year}}</td>
                 <td>{{ $students->created_by}}</td>
                 <td>
-                  <button class="btn btn-success"><a href="{{route('edit_student',$students->id)}}">Edit</a></button>
+                  <button class="btn btn-success"><a href="{{route('edit_student',$students->id)}}">Update</a></button>
+
+                  <button class="btn btn-success"><a href="{{route('delete_student',$students->id)}}">delete</a></button>
+                  <button class="btn btn-success"><a href="#">Add education</a></button>
+                
                 </td>
           
               </tr>
