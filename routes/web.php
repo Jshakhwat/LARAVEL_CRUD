@@ -25,3 +25,5 @@ Route::post('/insert_student', [App\Http\Controllers\StudentController::class, '
 Route::get('/edit_student/{id}', [App\Http\Controllers\StudentController::class, 'edit_student'])->name('edit_student');
 Route::put('/update-student/{id}', [App\Http\Controllers\StudentController::class, 'update_student'])->name('update_student');
 Route::get('/delete-student/{id}', [App\Http\Controllers\StudentController::class, 'delete_student'])->name('delete_student');
+
+Route::get('/add-education/{id}', [App\Http\Controllers\StudentController::class, 'add_education'])->name('add_education');
